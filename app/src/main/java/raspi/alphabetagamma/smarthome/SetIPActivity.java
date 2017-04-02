@@ -29,7 +29,7 @@ public class SetIPActivity extends AppCompatActivity {
         setIp = (Button) findViewById(R.id.button2);
         getIp = (EditText) findViewById(R.id.editText4);
         prefManager = new PrefManager(this);
-//      avin
+
 //        if (!prefManager.isFirstTimeLaunch()) {
 //            launchHomeScreen();
 //        }
