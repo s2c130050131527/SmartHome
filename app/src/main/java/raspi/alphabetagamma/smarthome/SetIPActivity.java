@@ -31,7 +31,7 @@ public class SetIPActivity extends AppCompatActivity {
         prefManager = new PrefManager(this);
 
 //        if (!prefManager.isFirstTimeLaunch()) {
-//            launchHomeScreen();
+//             launchHomeScreen();
 //        }
         setIp.setOnClickListener(new View.OnClickListener() {
             @Override
