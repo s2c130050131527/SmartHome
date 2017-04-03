@@ -74,7 +74,6 @@ public class MainActivity extends AppCompatActivity implements LoadJSONTask.List
             @Override
             public void onClick(View v) {
                 updateList();
-//learning using github
 
             }
         });
