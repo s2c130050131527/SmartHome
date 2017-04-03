@@ -77,6 +77,7 @@ public class Myadapter extends SimpleAdapter {
                 if(ctx instanceof MainActivity){
                     ((MainActivity)ctx).updateList();
                 }
+                //Android is Amazing
 
             }
         });
