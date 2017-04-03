@@ -1,5 +1,6 @@
 package raspi.alphabetagamma.smarthome;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
@@ -22,6 +23,7 @@ import java.util.List;
 
 public class LoadJSONTask extends AsyncTask<String, Void, Response> {
     private Context ctx;
+    private ProgressDialog progressDialog;
     public LoadJSONTask(Context ctx, Listener listener) {
 
         mListener = listener;
@@ -36,6 +38,14 @@ public class LoadJSONTask extends AsyncTask<String, Void, Response> {
     }
 
     private Listener mListener;
+
+    @Override
+    protected void onPreExecute() {
+        super.onPreExecute();
+        progressDialog=new ProgressDialog(ctx);
+        progressDialog.setMessage("Loading...");
+        progressDialog.show();
+    }
 
 
     @Override
@@ -66,6 +76,7 @@ public class LoadJSONTask extends AsyncTask<String, Void, Response> {
 
             mListener.onError();
         }
+        progressDialog.dismiss();
     }
 
 

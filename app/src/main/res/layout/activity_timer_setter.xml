@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:background="@drawable/list_selector"
+        tools:context="raspi.alphabetagamma.smarthome.TimerSetter">
+
+        <Button
+            android:id="@+id/starttimer"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:text="Set Start Time"
+            android:background="@drawable/checkstatus"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="78dp" />
+
+        <Button
+            android:id="@+id/endtimer"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Set End Time"
+            android:background="@drawable/checkstatus"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/starttimer"
+            android:layout_alignStart="@+id/starttimer" />
+
+        <EditText
+            android:id="@+id/editstart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/endtimer"
+            android:layout_toEndOf="@+id/starttimer"
+            android:ems="10"
+            android:inputType="time" />
+
+        <EditText
+            android:id="@+id/editend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/endtimer"
+            android:layout_toEndOf="@+id/endtimer"
+            android:ems="10"
+            android:inputType="time" />
+
+        <Button
+            android:id="@+id/savetimer"
+            android:layout_width="90dp"
+            android:background="@drawable/listbutton"
+            android:layout_height="50dp"
+            android:text="Save"
+            android:layout_marginEnd="30dp"
+            android:layout_toStartOf="@+id/editend"
+            android:layout_alignTop="@+id/cleartimer" />
+        <Button
+            android:id="@+id/cleartimer"
+            android:layout_width="90dp"
+            android:background="@drawable/listbutton"
+            android:layout_height="50dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginTop="55dp"
+            android:text="Reset"
+            android:layout_below="@+id/editend"
+            android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

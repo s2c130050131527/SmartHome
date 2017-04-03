@@ -31,11 +31,23 @@
 
     <Button
         android:id="@+id/checkstatus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Check Status"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:text="Refresh Status"
+        android:background="@drawable/checkstatus"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="64dp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/checkstatus"
+        android:layout_marginEnd="19dp"
+        android:layout_marginTop="10dp"
+        android:text="Smart Switch"
+        android:theme="@style/ThemeOverlay.AppCompat.Light" />
 
 </RelativeLayout>

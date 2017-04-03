@@ -9,7 +9,8 @@
     <color name="bg_screen2">#20d2bb</color>
     <color name="bg_screen3">#3395ff</color>
     <color name="bg_screen4">#c873f4</color>
-    <color name="bg_screen5">#63847f</color>
+    <color name="bg_screen5">#f7920c</color>
+    <color name="switchcolor">#000000</color>>
 
     <!-- dots inactive colors -->
     <color name="dot_dark_screen1">#d6a208</color>
